@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final</title>
+    <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100;400&family=Open+Sans&family=Wavefont&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
 </head>
 
 <header>
-    <img src="images/logo.png" alt="The logo image depicts 3 stars on a yellow background">
+    <img src="images/logo.png" alt="The logo image depicts 3 stars on a yellow background" id="logo">
     <div class="headnav">
         <nav>
             <ul>
@@ -24,122 +32,191 @@
         </nav>
     </div>
     <!-- Creates search bar for header -->
-    <div>    
+    <div id="searchbar">    
         <form id="search-bar" action="/tutorial/action.html">
         <fieldset>
-          <legend>Search</legend>
+          <legend></legend>
       
           <input type="text" placeholder="Search" name="Search"><br /><br />
         
-          <button type="submit">Search</button>
+          <button type="submit" class="search-button">⌕</button>
         </fieldset>
       </form>
     </div>
 </header>
 <body>
+    <section class="banner">
+        <container class="hero-container">
+        <div class="hero-wrapper">
+                <h1>Welcome to Three Star Media</h1 id="threestar">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim reprehenderit culpa ut? Minima repellat laboriosam consectetur eligendi cupiditate facere perspiciatis alias nobis minus dolorem quod dolorum, iusto voluptates maxime nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore asperiores perspiciatis, nemo dolorem quod aliquam fuga pariatur nihil temporibus illo ad odit perferendis corrupti officia quam dolor iste sit vel.</p>
+                    <div class="hero-button"><a href="#">Connect with us</a><span class="material-symbols-sharp">
+                        arrow_right
+                        </span></div>
+        </div>
+        </container>
+        </section>
     <!--This creates the connect with us section  -->
-    <img src="images/main-banner.jpg">
-    <div>
-        <p>Welcome to Three Star.</p>
+    <!--<div class="banner" background="main-banner.jpg">
+
+        <p>Welcome to Three Star.</p id="threestar">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim reprehenderit culpa ut? Minima repellat laboriosam consectetur eligendi cupiditate facere perspiciatis alias nobis minus dolorem quod dolorum, iusto voluptates maxime nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore asperiores perspiciatis, nemo dolorem quod aliquam fuga pariatur nihil temporibus illo ad odit perferendis corrupti officia quam dolor iste sit vel.</p>
         
             <div><a href="#">Connect with us</a></div>
         
     </div>
-   
+-->
     <!-- Creates About us section -->
-    <img src="images/about-us.jpg" alt="Image of an office with a ping pong table in focus">
-    <div>
-        <p>About us</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quam, iste ipsa earum labore unde est soluta id non animi molestias voluptates. Quas, dolor. Nam reiciendis magni pariatur eaque eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi est voluptatum obcaecati necessitatibus, perspiciatis at veritatis fugiat cumque ratione harum distinctio debitis aliquam quae dolor, velit voluptatem placeat, quas tempore.
+<section>
+    <container class="about-grid">
+    <img src="images/about-us.jpg" class="about-img" alt="Image of an office with a ping pong table in focus">
+    
+    <div class="text-wrapper">
+        <h2>About us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quam, iste ipsa earum labore unde est soluta id non animi molestias voluptates. Quas, dolor. Nam reiciendis magni pariatur eaque eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi est voluptatum obcaecati necessitatibus, perspiciatis at veritatis fugiat cumque ratione harum distinctio debitis aliquam quae dolor, velit voluptatem placeat, quas tempore.</p>
 
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, adipisci? Nesciunt consequatur voluptatibus, eos aspernatur, in maiores provident quas minima repellendus labore dolorem aperiam assumenda sapiente accusantium ad facilis debitis?
+       <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, adipisci? Nesciunt consequatur voluptatibus, eos aspernatur, in maiores provident quas minima repellendus labore dolorem aperiam assumenda sapiente accusantium ad facilis debitis?
         </p>
     </div>
-    
+    </container>
+</section>
     <!-- Creates Our services section -->
 
-    <div>
-        <p>Our Services</p>
+    <div class="test-stretch">
+        <h2>Our Services</h2>
+        <div class="flex-grid1">
+        <div class="card">
+        
         <img src="images/digital.jpg" alt="Someone holding a smartphone in front of a laptop">
-        <p>Digital Transformation</p>
+       <div class="text-wrapper">
+        <h3>Digital Transformation</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae sequi repudiandae dicta suscipit quidem consequuntur! Atque blanditiis enim quia mollitia, molestiae cumque cupiditate neque aspernatur est maxime repellendus delectus.</p>
         
-        <div><a href="#">Digital Plans</a></div>
+        <div><a href="#">Digital Plans<span class="material-symbols-sharp">
+            arrow_right
+            </span></a></div>
+            
+        </div>
     </div>
+
+    
 
     <!-- Creates marketing section -->
     <!-- add img of laptop here -->
     <div>
+        <div class="card">
         <img src="images/marketing.jpg" alt="image of laptop with marketing stats open on desk">
-        <p>Marketing</p>
+
+    <div class="text-wrapper">
+        <h3>Marketing</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, quidem recusandae in dignissimos doloremque assumenda enim inventore cumque! Sunt nobis excepturi reiciendis veniam quia in sit veritatis facilis. Suscipit, eius!</p>
         
-        <div><a href="#">Marketing Plans</a></div>
+        <div><a href="#">Marketing Plans<span class="material-symbols-sharp">
+            arrow_right
+            </span></a></div>
+    </div>
+    </div>
+    </div>
+</div>  
+
     </div>
 
     <!-- Creates video production section -->
     <!-- Add youtube phone img here -->
-    <div>
+    <div class="flex-grid2">
+    <div class="card">
+
         <img src="images/video.jpg" alt="image of smartphone opening youtube app">
-        <p>Video Production</p>
+        <div class="text-wrapper">
+        <h3>Video Production</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus error dicta nulla corrupti minima, rem voluptatum laboriosam officia adipisci assumenda ipsum minus eius perspiciatis quis, provident nemo quam optio eaque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse voluptatem fugit molestias dolorum modi quisquam recusandae animi tempora temporibus quam! Sint iusto quas hic ab rerum repellendus, temporibus a incidunt.</p>
 
-        <div><a href="#">Video Plans</a></div>
+        <div><a href="#">Video Plans<span class="material-symbols-sharp">
+            arrow_right
+            </span></a></div>
+        </div>
     </div>
 
     <!-- Creates Web Development section -->
     
-    <div>
+    <div class="card">
         <img src="images/web.jpg" alt="An image of a smartphone with opening instagram">
-        <p>Web Development</p>
+       <div class="text-wrapper">
+        <h3>Web Development</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsum optio repudiandae modi. Illum quam aliquam beatae expedita magnam autem ea ullam velit maiores. Illum hic harum voluptatem quod nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, illum laudantium quaerat quod a beatae doloremque eaque odio! Quod commodi natus nisi reprehenderit voluptates quibusdam tempore. Voluptatibus deleniti rerum amet?</p>
 
-        <div><a href="#">Web plans</a></div>
+        <div><a href="#">Web plans<span class="material-symbols-sharp">
+            arrow_right
+            </span></a></div>
+        </div>
     </div>
 
     <!-- Creates print section -->
     <!-- Add img of newspaper stands -->
-    <div>
-        <p>Print</p>
-        <img src="images/print.jpg" alt="Image of old newspaper boxs lined along a city street">
+    <div class="card">
+    <img src="images/print.jpg" alt="Image of old newspaper boxs lined along a city street">
+       <div class="text-wrapper">
+        <h3>Print</h3>
+        
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsum optio repudiandae modi. Illum quam aliquam beatae expedita magnam autem ea ullam velit maiores. Illum hic harum voluptatem quod nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, illum laudantium quaerat quod a beatae doloremque eaque odio! Quod commodi natus nisi reprehenderit voluptates quibusdam tempore. Voluptatibus deleniti rerum amet?</p>
 
-        <div><a href="#">Print Plans</a></div>
+        <div><a href="#">Print Plans<span class="material-symbols-sharp">
+            arrow_right
+            </span></a></div>
+        </div>
+    </div>
     </div>
 
 
     <!-- Creates our vision section -->
-    <img src="images/vision.jpg" alt="metal sculptures in the void">
-    <div>
-        <p>Our Vision</p>
+    <section>
+        <container>
+    
+            <div class="banner-card">
+        <img src="images/vision.jpg" alt="metal sculptures in the void">
+        <div class="banner-text">
+            <h3>Our Vision</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsum optio repudiandae modi. Illum quam aliquam beatae expedita magnam autem ea ullam velit maiores. Illum hic harum voluptatem quod nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, illum laudantium quaerat quod a beatae doloremque eaque odio! Quod commodi natus nisi reprehenderit voluptates quibusdam tempore. Voluptatibus deleniti rerum amet?</p>
-
-        <div><a href="#">Learn More</a></div>
-    </div>
-
+        
+        <div class="vision-button"><a href="#">Learn More</a><span class="material-symbols-sharp">
+            arrow_right
+            </span></div>
+         </div>
+        </div>
+        </container>
+    </section>
+    <h2>Our Team</h2>
+    <div class="flex-grid3">
     <!-- creates john doe our team -->
+    <div class="card">
     <img src="images/john.jpg" alt="Image of CEO John, Smiley young breaded man">
     <div>
-        <p>John Doe</p>
-        <p>CEO and Co-Owner</p>
+        <div class="text-wrapper">
+        <h3>John Doe</h3>
+        <h4>CEO and Co-Owner</h4>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsum optio repudiandae modi. Illum quam aliquam beatae expedita magnam autem ea ullam velit maiores. Illum hic harum voluptatem quod nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, illum laudantium quaerat quod a beatae doloremque eaque odio! Quod commodi natus nisi reprehenderit voluptates quibusdam tempore. Voluptatibus deleniti rerum amet?</p>
+        </div>
     </div>
-
+    </div>
     <!-- creates Bobs our team section -->
-    <img src="images/bob.jpg" alt="Image of CFO Bob, Thoughful breaded young man with glasses"/>
-    <div class="bob">
-        <p>Bob Rite</p>
-        <p>CFO and Co-Owner</p>
+    <div class="card">
+        <img src="images/bob.jpg" alt="Image of CFO Bob, Thoughful breaded young man with glasses"/>
+    <div class="text-wrapper">
+        <h3>Bob Rite</h3>
+        <h4><b>CFO and Co-Owner</b></h4>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsum optio repudiandae modi. Illum quam aliquam beatae expedita magnam autem ea ullam velit maiores. Illum hic harum voluptatem quod nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, illum laudantium quaerat quod a beatae doloremque eaque odio! Quod commodi natus nisi reprehenderit voluptates quibusdam tempore. Voluptatibus deleniti rerum amet?</p>
     </div>
-
+    </div>
+    </div>
     <!-- creates Contact Us form -->
 
 
-        <div class="container">
-            <form action="action_page.php">
-          
+        <div class="text-wrapper">
+            <h2>Contact Us</h2>
+            <h3>Send us a Message</h3>
+           <div>
+            <form action="action_page.php" class="form-wrapper">
+            
               <label for="fname">Full Name</label>
               <input type="text" id="fname" name="firstname" placeholder="Your name..">
               <label for="email">Enter your email:</label>
@@ -150,13 +227,18 @@
               <input type="submit" value="Submit">
           
             </form>
+            </div>
         </div> 
 
     <!-- creates hours of operations -->
+<section>
+    <container>
+        <div class="hours-table">
+    <h3>Hours of Operation</h3>
     <table>
         <tr>
-          <td>Days</td>
-          <td>Hours</td>
+          <th>Days</th>
+          <th>Hours</th>
         </tr>
         <tr>
           <td>Monday-Friday</td>
@@ -167,17 +249,20 @@
             <td>Closed</td>
         </tr>
         
-    </table> 
+    </table>
+        </div>
+    </container>
+</section>
     <!-- Adds google map of algonquin college -->
     <div>
-        <p>Location</p>
+        <h3>Location</h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9442698268485!2d-75.7575006240686!3d45.34993724105568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1702047742676!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </body>
 <footer>
     <div>
-        <P>Copyright Three Star Media 2020</P>
-        <p>All Images takes from <a href="https://unsplash.com"></a>Unsplash</p>
+        <P>ⓒ Copyright Three Star Media 2020</P>
+        <p>All Images takes from <a href="https://unsplash.com"></a><u>Unsplash</u></p>
 
     </div>
 </footer>

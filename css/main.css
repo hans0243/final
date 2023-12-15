@@ -46,61 +46,387 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 } 
-
+/* Creates media qurries - these are to remain at the top in order for them to effect the entire page */
+/* Mobile screen size */
 @media only screen and (min-width: 760px) {
+	h1{
+		font-size: 4rem;
+		line-height: 1.6;
+		padding-bottom:0;
+	}
+
+	h2{
+		font-size: 3rem;
+		padding-bottom: 1.5rem;
+		padding-top:1.5rem;
+
+	}
+
+	h3{
+		font-size: 1.5rem;
+	}
+
+	p{
+		font-size: ;
+	}
+
+	.text-wrapper{
+		margin:2rem 0;
+	}
+
+	
+	
+	.about-img{
+		max-width: 100%;
+		max-height: 100%;
+		margin-bottom: 0;
+	}
+
+
+	.about-grid{
+		background-color: #ffe6ac;
+		padding:1rem 1rem;
+		display: flex; 
+		flex-direction: column;
+				
+	}
+
+	.banner-text{
+		align-items: left;
+		flex-direction: column;
+		padding:1rem 2rem;
+	}
+
+	.form-wrapper{
+		display:flex;
+		flex-direction: column;
+		
+	}
+}
+/* Desktop screen size */
+@media only screen and (min-width:1200px) {
+
+		.about-grid{
+		padding:2rem 5rem;
+		display: flex; 
+		flex-direction: row;
+			
+	}
+
+	.form-wrapper{
+		display:flex;
+		flex-direction: column;
+		
+	}
+.hero-container{
+	padding:6rem 5rem;
+}
+.hero-wrapper{
+	padding: 5rem 2rem 1rem 2em;
+	margin:5rem 5rem;
+}
+/* why wont you align!! */
+.flex-grid1{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	flex-basis: auto;
+	align-content: stretch;
+
 }
 
-@media only screen and (max-width:1200) {
+.flex-grid2{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	flex-basis: auto;
+	align-content: stretch;
+}
 
+.flex-grid3{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	flex-basis: auto;
+	align-content: stretch;
+}
+}
+
+
+ 
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+#logo{
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	background-color: #C78C06;
 }
 
 .headnav{
-	background-color: black;
-	margin:auto;
+	background-color:#C78C06;
 	display: flex;
-
+	justify-content: center;
 }
 
-/* Target tag */
-ul {}
+fieldset{
+	background-color: #222;
+	display: flex;
+	justify-content: center;
+	max-width:100%;
+	height:50px;
+	flex-direction: row;
+	padding: 1rem;
+	flex-grow: 3;
+	
+}
 
-/* Target class */
-.hours {}
-
-/* Target id */
-#hours {}
-
-/* Select items with specific parents */
-table tr #hours {}
-
-/* Style multiple elements the same */
-h1, h2, h3 {}
-
-/* Pseudo classes */
-table tr:nth-child(1) td:nth-child(2) {}
-
-table tr:first-child td:last-child {}
-
-/* hover */
-nav ul li a:hover {
+fieldset > input{
+	display:flex;
+	flex-grow: 1;
 }
 
 
-.main-header {
-	color: red;
+
+header{
+	background-color: #C78C06;
 }
 
-h1 {
-	color: green;
+
+#bannertext{
+	text-align: center;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+	position: relative;
 }
 
-img {
-	width:100%;
-	Height: auto;
+
+
+
+	
+
+#threestar{
+	position: 60px , 60px;
+	z-index: 3;
+	
+
 }
 
-@media only screen and (min-width:760px){
-	h1{
-		color:red;
+.container {
+	
 	}
+	
+	section .banner {
+		background-image: url("images/main-banner.jpg");
+		}
+
+h1{
+	font-size: 5rem;
+	color: white;
+	font-weight:700;
+	padding-bottom:3rem;
 }
+
+h2{
+	font-weight: 600;
+}
+
+h3{
+	font-weight: 600;
+	padding: 1rem 0 1rem 0;
+
+}
+
+h1,h2,h3{
+	 
+}
+
+.hero-wrapper{
+	background: rgba(0,0,0,0.5);
+/* top | right | bottom | left */
+	padding: 5rem 2rem 1rem 2em;
+	
+}
+
+.hero-wrapper>p{
+	color:white;
+}
+
+p{
+	line-height: 1.6;
+	padding-bottom:0.8rem;
+}
+/* Creates the base button - used throughout project */
+.hero-button{
+	color:black;
+	padding:1.5rem;
+	background-color:#C78C06;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.hero-button > a{
+	color:black;
+	text-decoration: none;
+}
+
+
+/* Arrow for buttons! */
+.material-symbols-outlined {
+	font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+.about-grid{
+	background-color: #ffe6ac;
+
+}
+
+.text-wrapper{
+	padding:1rem;
+}
+
+/* our vision banner */
+.banner-card{
+	position: relative;
+
+}
+
+.banner-card img{
+	margin: auto;
+	width:100%;
+	height: 400px;
+	object-fit: cover;
+}
+
+.banner-text{
+	position: absolute;
+	/* top | right | bottom | left awesome little tool for remembering padding*/
+	padding: 2rem 5rem;
+	color:white;
+	top: 10%
+}
+
+.vision-button{
+	color:black;
+	padding:1.5rem;
+	background-color:#222;
+	text-decoration: none;
+	display: inline-block;
+	border: 2px solid #C78C06;
+}
+
+.vision-button>a{
+	color:white;
+	text-decoration: none;
+}
+
+.vision-button .material-symbols-sharp{
+	color: white;
+}
+
+.banner-card {
+	background-image: url("images/banner-image.jpg");
+	background-repeat: no-repeat;
+	object: fill;
+	}
+
+.form-wrapper{
+		display:flex;
+		flex-direction: column;
+		position: relative;
+		padding:1rem;
+	}
+
+
+	.hour-table{
+		display: grid;
+		grid-template-columns: 1fr, 1fr;
+		grid-template-rows: 1fr, 1fr;
+	}
+
+	.card{
+		background-color: #ffe6ac;
+  		color: black;
+  		margin:1rem;
+
+	}
+	
+	.card a{
+		color:white;
+	padding:1.5rem;
+	background-color:#222;
+	text-decoration: none;
+	flex-grow: 1;
+	display:flex;
+	}
+
+
+.card img{
+	margin: auto;
+	width:100%;
+}
+
+h4{
+	font-weight: bold;
+	text-decoration: underline #C78C06;
+}
+
+footer{
+	background-color: #222;
+	color: #C78C06;
+	padding:1rem;
+}
+
+iframe{
+	margin: auto;
+	width:100%;
+	height: 400px;
+}
+
+table, th, td {
+	border: 1px solid black;
+	padding:1rem;
+  }
+  
+  table {
+  width: 100%;
+  margin: 1rem;
+  }
+/* TH targets the head of table - TR do not make good TH */
+  th {
+	background-color: #ffe6ac ;
+	}
+
+	.headnav{
+		font-family:'Open Sans', sans-serif;
+		font-size: large;
+		color: #222;
+	}
+
+	.search-button{
+		color:#C78C06;
+		font-size: 2rem;
+		background-color: #222;
+		border: 2px solid #C78C06;
+		padding: 0 1rem;
+	}
+
+	.banner {
+		background-image: url(/images/main-banner.jpg);
+		max-width: 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		background-size: 100% 100%;
+
+		} 
+	
+	
+/* Thanks again Jess for everything - sorry for CSS mess but learned a tonne on this one */
